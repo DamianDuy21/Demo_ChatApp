@@ -45,8 +45,17 @@ const SignUpPage = () => {
     const isSuccess = validateForm();
     if (!isSuccess) return;
 
-    await signUp(formData);
-    // console.log("Form submitted:", formData);
+    try {
+      await signUp(formData);
+      setFormData({
+        fullName: "",
+        email: "",
+        password: "",
+      });
+      window.location.href = "/sign-in"; // Redirect to sign-in page after successful sign-up
+    } catch (error) {
+      console.error("Error during sign up:", error);
+    }
   };
 
   return (
