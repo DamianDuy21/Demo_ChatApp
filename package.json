@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "npm i --prefix backend && npm i --prefix frontend && npm run build --prefix frontend",
-    "start": "npm run start --prefix backend",
+    "build": "npm i --prefix back-end && npm i --prefix front-end && npm run build --prefix front-end",
+    "start": "npm run start --prefix back-end",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
