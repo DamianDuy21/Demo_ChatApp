@@ -20,9 +20,6 @@ export default function App() {
     }
   }, []);
 
-  console.log("onlineUsers", onlineUsers);
-  // console.log("authUser", authUser);
-
   if (isCheckingAuth && !authUser) {
     return (
       <div className="flex items-center justify-center h-screen">
